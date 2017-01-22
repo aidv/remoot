@@ -1,0 +1,457 @@
+EESchema Schematic File Version 2
+LIBS:remoot-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:remoot-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino_nano U?
+U 1 1 5864E1E2
+P 8050 3900
+F 0 "U?" H 8550 2950 70  0000 C CNN
+F 1 "arduino_nano" H 8800 2850 70  0000 C CNN
+F 2 "DIL20" H 8050 3850 60  0000 C CNN
+F 3 "" H 8050 3900 60  0001 C CNN
+	1    8050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q?
+U 1 1 5864E23B
+P 6950 1850
+F 0 "Q?" V 7150 1925 50  0000 L CNN
+F 1 "2N2222" H 7150 1850 50  0000 L CNN
+F 2 "TO-92" H 7150 1775 50  0000 L CIN
+F 3 "" H 6950 1850 50  0000 L CNN
+	1    6950 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BC307 Q?
+U 1 1 5864E2F9
+P 6050 1750
+F 0 "Q?" H 6250 1825 50  0000 L CNN
+F 1 "S8550" H 6250 1750 50  0000 L CNN
+F 2 "TO-92" H 6250 1675 50  0000 L CIN
+F 3 "" H 6050 1750 50  0000 L CNN
+	1    6050 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Battery Micro_LiPo
+U 1 1 5864E35A
+P 3650 1300
+F 0 "Micro_LiPo" H 3750 1350 50  0000 L CNN
+F 1 "4.7V/110mAh" H 3750 1250 50  0000 L CNN
+F 2 "" V 3650 1340 50  0000 C CNN
+F 3 "" V 3650 1340 50  0000 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 1K
+U 1 1 5864E687
+P 6500 1750
+F 0 "1K" V 6580 1750 50  0000 C CNN
+F 1 "R" V 6500 1750 50  0000 C CNN
+F 2 "" V 6430 1750 50  0000 C CNN
+F 3 "" H 6500 1750 50  0000 C CNN
+	1    6500 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 1K
+U 1 1 5864E6C3
+P 6950 2200
+F 0 "1K" V 7030 2200 50  0000 C CNN
+F 1 "R" V 6950 2200 50  0000 C CNN
+F 2 "" V 6880 2200 50  0000 C CNN
+F 3 "" H 6950 2200 50  0000 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L XLR3-RESCUE-remoot K?
+U 1 1 5864EB26
+P 4500 1300
+F 0 "K?" H 4650 1550 50  0000 C CNN
+F 1 "StepUp" H 4700 1050 50  0000 C CNN
+F 2 "" H 4500 1300 50  0000 C CNN
+F 3 "" H 4500 1300 50  0000 C CNN
+	1    4500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5864EFFE
+P 5300 1750
+F 0 "SW?" H 5450 1860 50  0000 C CNN
+F 1 "SW_PUSH" H 5300 1670 50  0000 C CNN
+F 2 "" H 5300 1750 50  0000 C CNN
+F 3 "" H 5300 1750 50  0000 C CNN
+	1    5300 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D Diode
+U 1 1 5864F2E6
+P 5650 2050
+F 0 "Diode" H 5650 2150 50  0000 C CNN
+F 1 "D" H 5650 1950 50  0000 C CNN
+F 2 "" H 5650 2050 50  0000 C CNN
+F 3 "" H 5650 2050 50  0000 C CNN
+	1    5650 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5864FE16
+P 7300 1950
+F 0 "#PWR?" H 7300 1700 50  0001 C CNN
+F 1 "GND" H 7300 1800 50  0000 C CNN
+F 2 "" H 7300 1950 50  0000 C CNN
+F 3 "" H 7300 1950 50  0000 C CNN
+	1    7300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5864FEC1
+P 4500 1850
+F 0 "#PWR?" H 4500 1600 50  0001 C CNN
+F 1 "GND" H 4500 1700 50  0000 C CNN
+F 2 "" H 4500 1850 50  0000 C CNN
+F 3 "" H 4500 1850 50  0000 C CNN
+	1    4500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5865003E
+P 8050 5450
+F 0 "#PWR?" H 8050 5200 50  0001 C CNN
+F 1 "GND" H 8050 5300 50  0000 C CNN
+F 2 "" H 8050 5450 50  0000 C CNN
+F 3 "" H 8050 5450 50  0000 C CNN
+	1    8050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 586510C2
+P 5950 4800
+F 0 "#PWR?" H 5950 4550 50  0001 C CNN
+F 1 "GND" H 5950 4650 50  0000 C CNN
+F 2 "" H 5950 4800 50  0000 C CNN
+F 3 "" H 5950 4800 50  0000 C CNN
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q?
+U 1 1 58651554
+P 5950 5650
+F 0 "Q?" V 6150 5725 50  0000 L CNN
+F 1 "2N2222" H 6150 5650 50  0000 L CNN
+F 2 "TO-92" H 6150 5575 50  0000 L CIN
+F 3 "" H 5950 5650 50  0000 L CNN
+	1    5950 5650
+	0    1    1    0   
+$EndComp
+Text GLabel 6200 6150 2    60   Input ~ 0
+DSLR_RED(pin3)
+$Comp
+L R 1K
+U 1 1 586519A4
+P 6150 6300
+F 0 "1K" V 6230 6300 50  0000 C CNN
+F 1 "R" V 6150 6300 50  0000 C CNN
+F 2 "" V 6080 6300 50  0000 C CNN
+F 3 "" H 6150 6300 50  0000 C CNN
+	1    6150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58651ABC
+P 6150 6450
+F 0 "#PWR?" H 6150 6200 50  0001 C CNN
+F 1 "GND" H 6150 6300 50  0000 C CNN
+F 2 "" H 6150 6450 50  0000 C CNN
+F 3 "" H 6150 6450 50  0000 C CNN
+	1    6150 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 6150 0    60   Input ~ 0
+DSLR_BLACK+WHITE(pin1+2)
+$Comp
+L SSD1306_I2C U?
+U 1 1 586521C6
+P 9850 3550
+F 0 "U?" H 9750 3900 50  0000 C CNN
+F 1 "SSD1306_I2C" H 9850 3203 50  0000 C CNN
+F 2 "" H 9850 3550 50  0000 C CNN
+F 3 "" H 9850 3550 50  0000 C CNN
+	1    9850 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58652752
+P 9850 4100
+F 0 "#PWR?" H 9850 3850 50  0001 C CNN
+F 1 "GND" H 9850 3950 50  0000 C CNN
+F 2 "" H 9850 4100 50  0000 C CNN
+F 3 "" H 9850 4100 50  0000 C CNN
+	1    9850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 1K
+U 1 1 5865381D
+P 5300 2300
+F 0 "1K" V 5380 2300 50  0000 C CNN
+F 1 "R" V 5300 2300 50  0000 C CNN
+F 2 "" V 5230 2300 50  0000 C CNN
+F 3 "" H 5300 2300 50  0000 C CNN
+	1    5300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_JOYSTICK U?
+U 1 1 5865071F
+P 5950 4250
+F 0 "U?" H 5950 4600 50  0000 C CNN
+F 1 "SPARKFUN_JOYSTICK" H 5950 3903 50  0000 C CNN
+F 2 "" H 5950 4250 50  0000 C CNN
+F 3 "" H 5950 4250 50  0000 C CNN
+	1    5950 4250
+	0    1    1    0   
+$EndComp
+Text Notes 650  7650 0    60   ~ 0
+NOTE:\nUSB power might not be sufficient to power\nboth the MCU and the SSD1306 at the same time.\n\nThe SSD1306 might need to be powered to\nexternal powersource while the MCU can be\npowered by USB.
+$Comp
+L GND #PWR?
+U 1 1 5870F110
+P 5600 2950
+F 0 "#PWR?" H 5600 2700 50  0001 C CNN
+F 1 "GND" H 5600 2800 50  0000 C CNN
+F 2 "" H 5600 2950 50  0000 C CNN
+F 3 "" H 5600 2950 50  0000 C CNN
+	1    5600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC1815 Q?
+U 1 1 5870F5A4
+P 5300 2750
+F 0 "Q?" V 5500 2825 50  0000 L CNN
+F 1 "2N2222" H 5500 2750 50  0000 L CNN
+F 2 "TO-92" H 5500 2675 50  0000 L CIN
+F 3 "" H 5300 2750 50  0000 L CNN
+	1    5300 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R 1K
+U 1 1 5870FA64
+P 6200 5250
+F 0 "1K" V 6280 5250 50  0000 C CNN
+F 1 "R" V 6200 5250 50  0000 C CNN
+F 2 "" V 6130 5250 50  0000 C CNN
+F 3 "" H 6200 5250 50  0000 C CNN
+	1    6200 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 1750 6350 1750
+Wire Wire Line
+	3650 1150 3650 950 
+Wire Wire Line
+	2250 950  3650 950 
+Wire Wire Line
+	3650 950  4500 950 
+Wire Wire Line
+	5300 1450 5950 1450
+Wire Wire Line
+	5950 1300 5950 1450
+Wire Wire Line
+	5950 1450 5950 1550
+Connection ~ 5950 1450
+Wire Wire Line
+	5300 2050 5500 2050
+Wire Wire Line
+	5800 2050 5950 2050
+Wire Wire Line
+	5950 1950 5950 2050
+Wire Wire Line
+	5950 2050 5950 2600
+Wire Wire Line
+	5950 2600 5950 3700
+Connection ~ 5950 2050
+Wire Wire Line
+	6950 2350 6950 3550
+Wire Wire Line
+	6950 3550 7350 3550
+Wire Wire Line
+	7150 1750 7300 1750
+Wire Wire Line
+	7300 1750 7300 1950
+Wire Wire Line
+	4500 1650 4500 1850
+Wire Wire Line
+	8950 5750 8950 3350
+Wire Wire Line
+	8950 3350 8750 3350
+Wire Wire Line
+	8750 3250 9050 3250
+Wire Wire Line
+	9050 3250 9050 5850
+Wire Wire Line
+	7350 3750 6950 3750
+Wire Wire Line
+	7350 3650 6550 3650
+Wire Wire Line
+	6550 3650 6550 4050
+Wire Wire Line
+	6550 4050 6450 4050
+Wire Wire Line
+	5750 5750 5750 6150
+Wire Wire Line
+	5750 6150 5600 6150
+Wire Wire Line
+	6150 5750 6150 6150
+Wire Wire Line
+	6150 6150 6200 6150
+Wire Wire Line
+	9350 3450 8750 3450
+Wire Wire Line
+	9350 3650 9250 3650
+Wire Wire Line
+	9250 3650 9250 3550
+Wire Wire Line
+	9250 3550 8750 3550
+Wire Wire Line
+	5950 2600 7900 2600
+Wire Wire Line
+	7900 2600 9850 2600
+Connection ~ 5950 2600
+Wire Wire Line
+	7900 2600 7900 2750
+Connection ~ 7900 2600
+Wire Wire Line
+	8950 5750 6650 5750
+Wire Wire Line
+	6950 3750 6950 5250
+Wire Wire Line
+	5950 5250 5950 5450
+Wire Wire Line
+	4850 1300 5950 1300
+Wire Wire Line
+	9050 5850 6550 5850
+Wire Wire Line
+	6550 5850 6550 4450
+Wire Wire Line
+	6550 4450 6450 4450
+Wire Wire Line
+	6650 5750 6650 4250
+Wire Wire Line
+	6650 4250 6450 4250
+Wire Wire Line
+	9850 2600 9850 3000
+Connection ~ 5950 1300
+Wire Wire Line
+	5300 2050 5300 2150
+Wire Wire Line
+	5300 2450 5300 2550
+Wire Wire Line
+	6650 1750 6750 1750
+Wire Wire Line
+	7350 3450 5100 3450
+Wire Wire Line
+	5100 3450 5100 2850
+Wire Wire Line
+	5500 2850 5600 2850
+Wire Wire Line
+	5600 2850 5600 2950
+Wire Wire Line
+	5950 5250 6050 5250
+Wire Wire Line
+	6950 5250 6350 5250
+Connection ~ 3650 950 
+$Comp
+L LiPoCharger K?
+U 1 1 58723DB2
+P 2150 1300
+F 0 "K?" H 2150 1600 50  0000 C CNN
+F 1 "LiPoCharger" H 2150 1050 50  0000 C CNN
+F 2 "" H 2150 1300 50  0000 C CNN
+F 3 "" H 2150 1300 50  0000 C CNN
+	1    2150 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 950  2250 1000
+Wire Wire Line
+	2050 1600 2050 1650
+Wire Wire Line
+	2050 1650 2250 1650
+Wire Wire Line
+	2250 1650 3650 1650
+Wire Wire Line
+	3650 1650 4500 1650
+Wire Wire Line
+	2250 1600 2250 1650
+Connection ~ 2250 1650
+Wire Wire Line
+	3650 1450 3650 1650
+Connection ~ 3650 1650
+Text GLabel 1600 950  0    60   Input ~ 0
+Arduino_USB_5V
+Wire Wire Line
+	2050 1000 2050 950 
+Wire Wire Line
+	2050 950  1600 950 
+Connection ~ 9850 2600
+$EndSCHEMATC

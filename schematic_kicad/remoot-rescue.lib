@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# XLR3-RESCUE-remoot
+#
+DEF XLR3-RESCUE-remoot K 0 30 Y N 1 F N
+F0 "K" 150 250 50 H V C CNN
+F1 "XLR3-RESCUE-remoot" 200 -250 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+C -130 0 40 0 1 0 N
+C 0 0 200 0 1 0 f
+C 0 120 40 0 1 0 N
+C 129 0 40 0 1 0 N
+T 0 -100 -110 40 0 0 1 1-4V Normal 1 C C
+T 0 10 60 40 0 0 1 5V Normal 1 C C
+T 0 100 -110 40 0 0 1 GND Normal 1 C C
+X 1-4V 1 -350 0 150 R 50 50 0 1 P
+X ~ 3 350 0 150 L 50 50 0 1 P
+X ~ 2 0 350 150 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
